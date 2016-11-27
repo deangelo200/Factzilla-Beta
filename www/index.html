@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Your app title -->
+    <title>My App</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/africa.css">
+    <link rel="stylesheet" href="css/animal.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <script src="js/jquery-3.1.1.js"></script>
+
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+      
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar main-home-nav">
+              <div class="navbar-inner">
+               <div class="left">
+                    <a href="#" class="icon-only open-left-panel">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="center" style="color:white">Africa</div>
+              </div> 
+            </div>
+             
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+              <div class="panel panel-left panel-cover contentt">
+                <div class="content-block">
+                     <p><i class="fa fa-times panel-close fa-3x close-btn hvr-icon-pop" aria-hidden="true"></i></p>
+                     <ul class="side-menu">
+                        <li class="side-menu-item">
+                          <img class="menu-icon" src="img/menu/favorite.png">
+                           <a href="favorite.html" class="external">Favorite</a>
+                        </li>
+                         
+                        <li class="side-menu-item">
+                          <img class="menu-icon" src="img/menu/animal.png">
+                           <a href="animal.html">Animals</a>
+                        </li>
+                        
+                         <li class="side-menu-item">
+                            <img class="menu-icon" src="img/menu/stars.png">
+                         <a href="#">Awesome</a>
+                         </li>
+                         
+                         <li class="side-menu-item">
+                            <img class="menu-icon" src="img/menu/heart.png">
+                         <a href="body.html" class="external">Body</a>
+                         </li>
+                         
+                         <li class="side-menu-item">
+                            <img class="menu-icon" src="img/menu/flag.png">
+                         <a href="#">Country</a>
+                         </li>
+                         
+                         <li class="side-menu-item">
+                            <img class="menu-icon" src="img/menu/planet-earth.png">
+                         <a href="#">Earth</a>
+                         </li>
+                         
+                         <li class="side-menu-item">
+                            <img class="menu-icon" src="img/menu/fries.png">
+                         <a href="#">Food</a>
+                         </li>
+                         
+                          <li class="side-menu-item">
+                            <img class="menu-icon" src="img/menu/carriage.png">
+                         <a href="#">History</a>
+                         </li>
+                         
+                         <li class="side-menu-item">
+                         <img class="menu-icon" src="img/menu/dice.png">
+                         <a href="random.html" class="external">Random</a>
+                         </li>
+                         
+                           <li class="side-menu-item">
+                            <img class="menu-icon" src="img/menu/flask.png">
+                         <a href="#">Science</a>
+                         </li>
+                         
+                           <li class="side-menu-item">
+                            <img class="menu-icon" src="img/menu/team.png">
+                         <a href="#">Society</a>
+                         </li>
+                         
+                           <li class="side-menu-item">
+                            <img class="menu-icon" src="img/menu/rocket.png">
+                         <a href="#">Univers</a>
+                         </li>      
+                     </ul>
+                </div>
+            </div>
+              <div class="page-content picture-background">
+                  <p class="text-copied">Text Copied</p>
+                   <div class="swiper-custom">
+                    <div class="swiper-container">
+                      <div class="swiper-pagination"></div>
+                         <div class="swiper-wrapper">
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+            <div class="pages">
+            <!-- Page, "data-page" contains page name -->
+               <div data-page="africa" class="page">
+                   <!-- Page Nav bar -->
+                
+                    <!--Page conent Africa -->
+              
+                   
+                </div>
+            </div>
+            <!-- shared Bottom Toolbar-->
+            <div class="toolbar main-home-nav">
+                        <div class="toolbar-inner">
+                        <i class="fa fa-files-o fa-lg hvr-icon-pop" id="bottom-btn-copy-hidden" aria-hidden="true"></i>
+                        <i class="fa fa-forward fa-lg hvr-icon-pop" id="bottom-btn-forward-hidden"  aria-hidden="true"></i>
+                        <i class="fa fa-heart fa-lg hvr-icon-pop" id="bottom-btn-favorite-hidden"  aria-hidden="true" onclick="favoriteFact()"></i>
+                        <i class="fa fa-share-alt fa-lg hvr-icon-pop" id="bottom-btn-share-hidden" aria-hidden="true" onclick="shareFact()" ></i>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
